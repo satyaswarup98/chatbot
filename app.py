@@ -15,6 +15,12 @@ def classify_feedback(text):
 # Streamlit UI
 st.title("Customer Feedback Chatbot")
 
+st.markdown("### Example Queries:")
+st.markdown("- **What category does this feedback fall under?**")
+st.markdown("- **How many complaints were received last week?**")
+st.markdown("- **Who are the top 5 high-value customers?**")
+st.markdown("- **Which country has the most complaints?**")
+
 # User input for feedback classification
 feedback = st.text_area("Enter customer feedback:")
 if st.button("Classify Feedback"):
